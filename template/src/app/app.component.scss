@@ -1,6 +1,57 @@
 .first-sec{
-    color: #424242;
-    background-color: rgba(249, 231, 173, 0.66);
-    font-family: "my-mono";
-    font-size: 50px;
+    color: #ffffff;
+    background-color: rgb(255, 255, 255);
 }
+.logo svg{
+    width: 100%;
+    filter: saturate(0);
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        filter: saturate(1);
+        transform: scale(0.95);
+    }
+}
+.blink-2 {
+	-webkit-animation: blink-2 4s 2s infinite both;
+	        animation: blink-2 4s 2s infinite both;
+}
+#sroll-ind svg{
+    width: 10%;
+    margin: auto;
+    fill: white;
+    -webkit-animation: ping 2s ease-in-out infinite both;
+	        animation: ping 2s ease-in-out infinite both;
+}
+
+.sec-sec p{
+    font-size: 44px;
+    font-weight: 700;
+    color: #282828;
+}
+
+
+
+
+.aurora {
+    background: #000;
+    position: relative;
+  }
+  .aurora:before,
+  .aurora:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border-radius: 100%;
+    opacity: 0.18;
+  }
+  .aurora:before {
+    box-shadow: 0 0 35vmax 35vmax #f00;
+    animation: hue 5s 0s linear infinite, move1 10s 0s linear infinite;
+  }
+  .aurora:after {
+    box-shadow: 0 0 35vmax 35vmax #0ff;
+    animation: hue 10s 0s linear infinite, move2 20s 0s linear infinite;
+  }
+  
