@@ -13,19 +13,19 @@ export class AppComponent implements OnInit {
   title = 'template';
   sec_sec = document.getElementById("2nd")
   ngOnInit(): void {
-    gsap.to('.sec-sec', {
-      scrollTrigger: {
-        trigger: '.sec-sec',
-        pin: true,
-        start: 'top top',
-        end: '+=150',
-        pinSpacing: false
-      }
-    })
+    // gsap.to('.sec-sec', {
+    //   scrollTrigger: {
+    //     trigger: '.sec-sec',
+    //     pin: true,
+    //     start: 'top top',
+    //     end: '+=150',
+    //     pinSpacing: false
+    //   }
+    // })
     ScrollTrigger.create({
-      trigger: this.sec_sec,
-      start: "top top",
-      end: "bottom bottom",
+      trigger: "#first-line",
+      start: "top 80%",
+      end:"bottom 60%",
       animation: gsap.fromTo("#first-line", {
         opacity: 0,
         y: 100
@@ -35,19 +35,10 @@ export class AppComponent implements OnInit {
         duration: 1
       }),
       scrub: true,
+      markers: true
     });
 
-    ScrollTrigger.create({
-      trigger: this.sec_sec,
-      start: "top top",
-      end: "bottom bottom",
-      animation: gsap.fromTo("#second-line", {
-        opacity: 0
-      }, {
-        opacity: 1,        
-      }),
-      scrub: true,
-    });
+   
 
 
   }
