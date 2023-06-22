@@ -13,15 +13,6 @@ export class AppComponent implements OnInit {
   title = 'template';
   sec_sec = document.getElementById("2nd")
   ngOnInit(): void {
-    // gsap.to('.sec-sec', {
-    //   scrollTrigger: {
-    //     trigger: '.sec-sec',
-    //     pin: true,
-    //     start: 'top top',
-    //     end: '+=150',
-    //     pinSpacing: false
-    //   }
-    // })
     ScrollTrigger.create({
       trigger: "#first-line",
       start: "top 80%",
