@@ -1,0 +1,89 @@
+.green-sec-bg{
+    background-image: url(../../assets/greeen-bg-abs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.huge-text-name{
+    font-size: 120px;
+    font-family: "valorax";
+    line-height: 0.5;
+}
+.huge-text-name span{
+    font-size: 100px;
+}
+.screenshot{
+    height: 300px;
+
+}
+.about-this{
+    width: 50%;
+    & p{
+        color: #ffffff;
+        margin-bottom: 10px;
+    }
+    & h2{
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
+.use-app-griend{
+    background-color: #2EB722;
+    border-radius: 15px;
+    
+    transition: all 800ms ease-in-out;
+    &:hover
+    {
+        transform: scale(1.05);
+        box-shadow: 0px 0px 8px #64DD5A;
+    }
+    
+}
+
+.game-on {
+    font-family: "game-on";
+    color: #ffffff;
+    opacity: 0.2;
+    transition: all .5s ease-in-out;
+    position: absolute;
+    cursor: pointer;
+
+    &:hover{
+        opacity: 1;
+    }
+    
+
+    &:nth-of-type(1){
+        // Griend
+        top: 10%;
+        left: 5%;
+        transform: rotate(90deg);
+    }
+    &:nth-of-type(2){
+        // Gamer
+        top: 10%;
+        right: 5%;
+        transform: rotate(90deg);
+    }
+    &:nth-of-type(3){
+        // Play
+        bottom:10%;
+        right: 5%;
+        transform: rotate(90deg);   
+    }
+    &:nth-of-type(4){
+        // Share
+        bottom:10%;
+        left: 5%; 
+        transform: rotate(90deg);
+    }
+    &:nth-of-type(5){
+        bottom:5%;
+    }
+    &:nth-of-type(6){
+        top:10%;
+    }
+}
+
